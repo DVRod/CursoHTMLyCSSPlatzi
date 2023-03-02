@@ -10,7 +10,7 @@
     
     
     
-    <!--
+    <!-- Esta es la forma tradicional de generar un calendario
     <form action="">
         <label for="hora">
            <span>Hora</span> 
@@ -31,13 +31,35 @@
          <input type="submit" />
     </form>
     -->
-
+<!--Esta es la forma sencilla de generar un calendaro, con un solo label
     <form action="">
         <label for="calendario">
             <span>Calendario</span>
             <input type="datetime-local" id="calendario" name="calendario" />
         </label>
         <input type="submit" />
-    </form>
+    </form>-->
+
+    <main>
+        <form action="">
+            <label for="nombre">
+                <span>Cual es tu nombre?</span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" required />
+            </label>
+            <label for="correo">
+                <span>cual es tu correo?</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email"required />
+            </label>
+            <label for="pais">
+                <span>En que país vives?</span>
+                    <input type="text" name="pais" id="pais" autocomplete="country" required />
+            </label>
+            <label for="cp">
+                <span>Cual es tu código postal?</span>
+                    <input type="number" name="cp" id="cp" autocomplete="postal-code" required />
+            </label>
+            <input type="submit" />
+        </form>
+    </main>
 </body>
 </html>
